@@ -64,8 +64,26 @@
     <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\MainPage.xbf">
-      <PackagePath>MainPage.xbf</PackagePath>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\AddEntryPage.xbf">
+      <PackagePath>Pages\AddEntryPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\MartialArtDetailsPage.xbf">
+      <PackagePath>Pages\MartialArtDetailsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\MartialArtsPage.xbf">
+      <PackagePath>Pages\MartialArtsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Pages\RegisterPage.xbf">
+      <PackagePath>Pages\RegisterPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\Views\BarPageTop.xbf">
+      <PackagePath>Views\BarPageTop.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.WindowsPhone\bin\Debug\MartialArtsWiki.WindowsPhone.xr.xml">
       <PackagePath>MartialArtsWiki.WindowsPhone.xr.xml</PackagePath>

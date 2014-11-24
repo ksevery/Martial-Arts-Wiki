@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Parse;
+
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -16,6 +16,13 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+
+using Parse;
+
+using MartialArtsWiki.Pages;
+using MartialArtsWiki.Models;
+using MartialArtsWiki.Pages.LocalPages;
+using Windows.Networking.Connectivity;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -34,10 +41,19 @@ namespace MartialArtsWiki
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
         /// </summary>
-        public App()
+        public App ()
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+            this.LoadParse();
+        }
+
+        private void LoadParse ()
+        {
+            ParseObject.RegisterSubclass<MartialArt>();
+            ParseObject.RegisterSubclass<Category>();
+
             ParseClient.Initialize("m5n4wdvxw7xreEvQguuHNtJDnz78vHEq3gu2qorY", "l0LU7Iv9FVAalgCU109F9VhHdN7H3C4Lv3KPLG6Y");
         }
 
@@ -47,7 +63,7 @@ namespace MartialArtsWiki
         /// search results, and so forth.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched (LaunchActivatedEventArgs e)
         {
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
@@ -94,10 +110,31 @@ namespace MartialArtsWiki
                 rootFrame.Navigated += this.RootFrame_FirstNavigated;
 #endif
 
+                Type pageType;
+
+                ConnectionProfile internetConnectionProfile = NetworkInformation.GetInternetConnectionProfile();
+
+                //if (internetConnectionProfile == null || !internetConnectionProfile.IsWlanConnectionProfile || !internetConnectionProfile.IsWwanConnectionProfile)
+                if (internetConnectionProfile == null)
+                {
+                    pageType = typeof(LocalMartialArtsPage);
+                }
+                else
+                {
+                    if (ParseUser.CurrentUser != null)
+                    {
+                        pageType = typeof(MainPage);
+                    }
+                    else
+                    {
+                        pageType = typeof(LoginPage);
+                    }
+                }
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
+                
+                if (!rootFrame.Navigate(pageType, e.Arguments))
                 {
                     throw new Exception("Failed to create initial page");
                 }
@@ -108,12 +145,26 @@ namespace MartialArtsWiki
         }
 
 #if WINDOWS_PHONE_APP
+        protected override void OnActivated (IActivatedEventArgs args)
+        {
+            base.OnActivated(args);
+
+            var root = Window.Current.Content as Frame;
+            var newEntryPage = root.Content as AddEntryPage;
+
+            var argument = args as FileOpenPickerContinuationEventArgs;
+            if (newEntryPage != null)
+            {
+                newEntryPage.ViewModel.PhonePickedFile(argument);
+            }
+        }
+
         /// <summary>
         /// Restores the content transitions after the app has launched.
         /// </summary>
         /// <param name="sender">The object where the handler is attached.</param>
         /// <param name="e">Details about the navigation event.</param>
-        private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
+        private void RootFrame_FirstNavigated (object sender, NavigationEventArgs e)
         {
             var rootFrame = sender as Frame;
             rootFrame.ContentTransitions = this.transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
@@ -128,7 +179,7 @@ namespace MartialArtsWiki
         /// </summary>
         /// <param name="sender">The source of the suspend request.</param>
         /// <param name="e">Details about the suspend request.</param>
-        private void OnSuspending(object sender, SuspendingEventArgs e)
+        private void OnSuspending (object sender, SuspendingEventArgs e)
         {
             var deferral = e.SuspendingOperation.GetDeferral();
 

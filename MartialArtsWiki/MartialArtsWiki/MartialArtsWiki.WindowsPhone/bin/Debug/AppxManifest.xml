@@ -24,13 +24,24 @@
   <Applications>
     <Application Id="App" Executable="MartialArtsWiki.WindowsPhone.exe" EntryPoint="MartialArtsWiki.WindowsPhone.App">
       <m3:VisualElements DisplayName="MartialArtsWiki.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="MartialArtsWiki.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png" />
+        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="images">
+            <SupportedFileTypes>
+              <FileType>.jpg</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClientServer" />
+    <Capability Name="picturesLibrary" />
+    <DeviceCapability Name="webcam" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="2a857334-a3fa-424f-b806-4e0e6b606ae3" />

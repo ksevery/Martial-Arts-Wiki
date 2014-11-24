@@ -3,5 +3,11 @@ Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
 Assets\StoreLogo.scale-100.png
 App.xbf
-MainPage.xbf
 MartialArtsWiki.Windows.xr.xml
+Pages\AddEntryPage.xbf
+Pages\LoginPage.xbf
+Pages\MainPage.xbf
+Pages\MartialArtDetailsPage.xbf
+Pages\MartialArtsPage.xbf
+Pages\RegisterPage.xbf
+Views\BarPageTop.xbf

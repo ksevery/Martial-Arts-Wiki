@@ -15,7 +15,85 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DummyConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Category.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\MartialArt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AddEntryPage.xaml.cs">
+      <DependentUpon>AddEntryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LocalPages\LocalMartialArtsPage.xaml.cs">
+      <DependentUpon>LocalMartialArtsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MartialArtDetailsPage.xaml.cs">
+      <DependentUpon>MartialArtDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MartialArtsPage.xaml.cs">
+      <DependentUpon>MartialArtsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\RegisterPage.xaml.cs">
+      <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite\SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AddEntryPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MartialArtDetailsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MartialArtsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MartialArtViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RegisterPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BarPageTop.xaml.cs">
+      <DependentUpon>BarPageTop.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\AddEntryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\LocalPages\LocalMartialArtsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MartialArtDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MartialArtsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Views\BarPageTop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\rising-sun.jpg" />
   </ItemGroup>
 </Project>

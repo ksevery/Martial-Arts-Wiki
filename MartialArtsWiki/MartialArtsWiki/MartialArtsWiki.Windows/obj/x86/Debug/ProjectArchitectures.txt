@@ -1,0 +1,1 @@
+D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\MartialArtsWiki.Windows.csproj;x86
