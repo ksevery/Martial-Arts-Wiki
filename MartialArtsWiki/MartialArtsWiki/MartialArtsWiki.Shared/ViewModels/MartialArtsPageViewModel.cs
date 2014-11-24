@@ -48,12 +48,13 @@ namespace MartialArtsWiki.ViewModels
 
                 this.martialArts.Clear();
                 this.martialArts.AddRange(value);
+                this.RaisePropertyChanged(() => this.MartialArts);
             }
         }
 
         public async void LoadMartialArts (Category category)
         {
-            var martialArts = await new ParseQuery<MartialArt>()
+            var martialArts = await new ParseQuery<MartialArt>("MartialArt")
             .FindAsync();
 
             this.MartialArts = martialArts.Where(ma => ma.Category.ObjectId == category.ObjectId)

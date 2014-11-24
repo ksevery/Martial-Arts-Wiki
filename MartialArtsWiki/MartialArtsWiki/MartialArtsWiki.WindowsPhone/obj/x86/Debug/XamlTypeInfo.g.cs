@@ -370,6 +370,7 @@ namespace MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo
                 userType.AddMemberName("ViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
+                userType.AddMemberName("CurrentEditBtnContent");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -514,42 +515,52 @@ namespace MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo
             var that = (global::MartialArtsWiki.Pages.MartialArtDetailsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_14_MartialArtsPage_ViewModel(object instance)
+        private object get_14_MartialArtDetailsPage_CurrentEditBtnContent(object instance)
+        {
+            var that = (global::MartialArtsWiki.Pages.MartialArtDetailsPage)instance;
+            return that.CurrentEditBtnContent;
+        }
+        private void set_14_MartialArtDetailsPage_CurrentEditBtnContent(object instance, object Value)
+        {
+            var that = (global::MartialArtsWiki.Pages.MartialArtDetailsPage)instance;
+            that.CurrentEditBtnContent = (global::System.Object)Value;
+        }
+        private object get_15_MartialArtsPage_ViewModel(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.MartialArtsPage)instance;
             return that.ViewModel;
         }
-        private void set_14_MartialArtsPage_ViewModel(object instance, object Value)
+        private void set_15_MartialArtsPage_ViewModel(object instance, object Value)
         {
             var that = (global::MartialArtsWiki.Pages.MartialArtsPage)instance;
             that.ViewModel = (global::MartialArtsWiki.ViewModels.MartialArtsPageViewModel)Value;
         }
-        private object get_15_MartialArtsPage_NavigationHelper(object instance)
+        private object get_16_MartialArtsPage_NavigationHelper(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.MartialArtsPage)instance;
             return that.NavigationHelper;
         }
-        private object get_16_MartialArtsPage_DefaultViewModel(object instance)
+        private object get_17_MartialArtsPage_DefaultViewModel(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.MartialArtsPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_17_RegisterPage_DefaultViewModel(object instance)
+        private object get_18_RegisterPage_DefaultViewModel(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.RegisterPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_18_RegisterPage_NavigationHelper(object instance)
+        private object get_19_RegisterPage_NavigationHelper(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.RegisterPage)instance;
             return that.NavigationHelper;
         }
-        private object get_19_RegisterPage_ViewModel(object instance)
+        private object get_20_RegisterPage_ViewModel(object instance)
         {
             var that = (global::MartialArtsWiki.Pages.RegisterPage)instance;
             return that.ViewModel;
         }
-        private void set_19_RegisterPage_ViewModel(object instance, object Value)
+        private void set_20_RegisterPage_ViewModel(object instance, object Value)
         {
             var that = (global::MartialArtsWiki.Pages.RegisterPage)instance;
             that.ViewModel = (global::MartialArtsWiki.ViewModels.RegisterPageViewModel)Value;
@@ -647,41 +658,47 @@ namespace MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo
                 xamlMember.Getter = get_13_MartialArtDetailsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "MartialArtsWiki.Pages.MartialArtDetailsPage.CurrentEditBtnContent":
+                userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.MartialArtDetailsPage");
+                xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "CurrentEditBtnContent", "Object");
+                xamlMember.Getter = get_14_MartialArtDetailsPage_CurrentEditBtnContent;
+                xamlMember.Setter = set_14_MartialArtDetailsPage_CurrentEditBtnContent;
+                break;
             case "MartialArtsWiki.Pages.MartialArtsPage.ViewModel":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.MartialArtsPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "MartialArtsWiki.ViewModels.MartialArtsPageViewModel");
-                xamlMember.Getter = get_14_MartialArtsPage_ViewModel;
-                xamlMember.Setter = set_14_MartialArtsPage_ViewModel;
+                xamlMember.Getter = get_15_MartialArtsPage_ViewModel;
+                xamlMember.Setter = set_15_MartialArtsPage_ViewModel;
                 break;
             case "MartialArtsWiki.Pages.MartialArtsPage.NavigationHelper":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.MartialArtsPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "MartialArtsWiki.Common.NavigationHelper");
-                xamlMember.Getter = get_15_MartialArtsPage_NavigationHelper;
+                xamlMember.Getter = get_16_MartialArtsPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MartialArtsWiki.Pages.MartialArtsPage.DefaultViewModel":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.MartialArtsPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "MartialArtsWiki.Common.ObservableDictionary");
-                xamlMember.Getter = get_16_MartialArtsPage_DefaultViewModel;
+                xamlMember.Getter = get_17_MartialArtsPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MartialArtsWiki.Pages.RegisterPage.DefaultViewModel":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.RegisterPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "MartialArtsWiki.Common.ObservableDictionary");
-                xamlMember.Getter = get_17_RegisterPage_DefaultViewModel;
+                xamlMember.Getter = get_18_RegisterPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MartialArtsWiki.Pages.RegisterPage.NavigationHelper":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.RegisterPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "MartialArtsWiki.Common.NavigationHelper");
-                xamlMember.Getter = get_18_RegisterPage_NavigationHelper;
+                xamlMember.Getter = get_19_RegisterPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MartialArtsWiki.Pages.RegisterPage.ViewModel":
                 userType = (global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MartialArtsWiki.Pages.RegisterPage");
                 xamlMember = new global::MartialArtsWiki.MartialArtsWiki_WindowsPhone_XamlTypeInfo.XamlMember(this, "ViewModel", "MartialArtsWiki.ViewModels.RegisterPageViewModel");
-                xamlMember.Getter = get_19_RegisterPage_ViewModel;
-                xamlMember.Setter = set_19_RegisterPage_ViewModel;
+                xamlMember.Getter = get_20_RegisterPage_ViewModel;
+                xamlMember.Setter = set_20_RegisterPage_ViewModel;
                 break;
             }
             return xamlMember;

@@ -52,18 +52,18 @@ namespace MartialArtsWiki.Pages
             //this.SeedMartialArts();
         }
 
-        public async void SeedMartialArts ()
-        {
-            var categories = await new ParseQuery<Category>()
-            .FindAsync();
+        //public async void SeedMartialArts ()
+        //{
+        //    var categories = await new ParseQuery<Category>()
+        //    .FindAsync();
 
-            var martialArt = new MartialArt();
-            martialArt.Name = "Test";
-            martialArt.Description = "Testing";
-            martialArt.Category = categories.Where(c => c.CategoryType == Categories.MartialArts).First();
+        //    var martialArt = new MartialArt();
+        //    martialArt.Name = "Test";
+        //    martialArt.Description = "Testing";
+        //    martialArt.Category = categories.Where(c => c.CategoryType == Categories.MartialArts).First();
 
-            await martialArt.SaveAsync();
-        }
+        //    await martialArt.SaveAsync();
+        //}
 
         public MartialArtsPageViewModel ViewModel 
         {

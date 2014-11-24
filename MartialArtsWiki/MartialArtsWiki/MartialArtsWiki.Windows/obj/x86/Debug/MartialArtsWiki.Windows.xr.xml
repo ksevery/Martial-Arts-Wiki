@@ -55,7 +55,6 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Margin" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="Background" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumnSpan" />
@@ -71,7 +70,6 @@
     <RootType FullName="MartialArtsWiki.Views.BarPageTop">
       <RootProperty Name="Title" />
       <RootEvent Name="OnLogout" />
-      <RootEvent Name="OnFavoritesSelect" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Name" />
@@ -89,6 +87,9 @@
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Name" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
@@ -99,6 +100,7 @@
       <RootProperty Name="Name" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
@@ -110,7 +112,6 @@
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="MartialArtsWiki.Pages.AddEntryPage" />
-    <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectionMode" />
@@ -138,6 +139,7 @@
     <RootType FullName="MartialArtsWiki.Pages.LoginPage" />
     <RootType FullName="MartialArtsWiki.Pages.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Name" />
       <RootProperty Name="VerticalScrollMode" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalScrollMode" />
@@ -145,7 +147,6 @@
     <RootType FullName="MartialArtsWiki.Pages.MartialArtDetailsPage" />
     <RootType FullName="MartialArtsWiki.Pages.MartialArtsPage" />
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
-    <RootType FullName="System.String" />
     <RootType FullName="MartialArtsWiki.Pages.RegisterPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />

@@ -68,14 +68,6 @@ D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWik
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\MartialArtsWiki.Windows.pdb
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\en-US\Microsoft.Practices.ServiceLocation.Properties.Resources.resw
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\MartialArtsWiki.Windows.csproj.GenerateResource.Cache
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
-D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation.pri
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Microsoft.Practices.ServiceLocation\qualifiers.txt
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\priconfig.xml
@@ -95,3 +87,4 @@ D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWik
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Pages\LocalPages\LocalMartialArtsPage.g.cs
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Pages\LocalPages\LocalMartialArtsPage.xaml
 D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\obj\x86\Debug\Pages\LocalPages\LocalMartialArtsPage.xbf
+D:\My Stuff\12.Mobile Development\Windows Project\MartialArtsWiki\MartialArtsWiki\MartialArtsWiki.Windows\bin\x86\Debug\Pages\LocalPages\LocalMartialArtsPage.xbf

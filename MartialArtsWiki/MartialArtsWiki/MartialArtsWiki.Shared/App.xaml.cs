@@ -114,7 +114,7 @@ namespace MartialArtsWiki
 
                 ConnectionProfile internetConnectionProfile = NetworkInformation.GetInternetConnectionProfile();
 
-                //if (internetConnectionProfile == null || !internetConnectionProfile.IsWlanConnectionProfile || !internetConnectionProfile.IsWwanConnectionProfile)
+                //if (internetConnectionProfile == null || (!internetConnectionProfile.IsWlanConnectionProfile && !internetConnectionProfile.IsWwanConnectionProfile))
                 if (internetConnectionProfile == null)
                 {
                     pageType = typeof(LocalMartialArtsPage);

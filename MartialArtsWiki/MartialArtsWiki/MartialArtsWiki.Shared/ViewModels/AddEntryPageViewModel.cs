@@ -26,8 +26,6 @@ namespace MartialArtsWiki.ViewModels
         private MartialArt entry;
         private ICommand selectImageCommand;
 
-        
-
         public AddEntryPageViewModel ()
         {
             this.MartialArt = new MartialArt();
@@ -100,6 +98,7 @@ namespace MartialArtsWiki.ViewModels
                 return false;
             }
 
+            this.MartialArt.Owner = ParseUser.CurrentUser;
             await this.MartialArt.ImageForParse.SaveAsync();
             await this.MartialArt.SaveAsync();
             return true;

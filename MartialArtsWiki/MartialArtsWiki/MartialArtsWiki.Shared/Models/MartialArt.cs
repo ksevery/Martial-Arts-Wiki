@@ -39,5 +39,12 @@ namespace MartialArtsWiki.Models
             get { return GetProperty<ParseFile>(); }
             set { SetProperty<ParseFile>(value); }
         }
+
+        [ParseFieldName("owner")]
+        public ParseUser Owner
+        {
+            get { return GetProperty<ParseUser>(); }
+            set { SetProperty<ParseUser>(value); }
+        }
     }
 }

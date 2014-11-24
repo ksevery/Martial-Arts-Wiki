@@ -29,6 +29,7 @@ namespace MartialArtsWiki.Pages
     {
         private const string SuccessMessage = "Successfully added to favorites!";
         private const string ErrorMessage = "An error occurred, we could not add the item to favorites.";
+        private const string ButtonSaveContent = "Save Edit";
 
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
@@ -100,7 +101,13 @@ namespace MartialArtsWiki.Pages
                 return;
             }
 
+            
+
             this.ViewModel.MartialArt = martialArt;
+            if (this.ViewModel.IsEditableEntry())
+            {
+                this.editBtn.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
         }
 
         /// <summary>
@@ -165,5 +172,28 @@ namespace MartialArtsWiki.Pages
             var msgDialog = new MessageDialog(message);
             await msgDialog.ShowAsync();
         }
+
+        private async void OnEditButtonClick (object sender, RoutedEventArgs e)
+        {
+            if (this.ViewModel.IsEditing)
+            {
+                this.ViewModel.IsEditing = false;
+                this.tbDescription.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                this.tbEditDescription.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                this.editBtn.Content = this.CurrentEditBtnContent;
+                await this.ViewModel.UpdateEntry();
+            }
+            else
+            {
+                this.ViewModel.IsEditing = true;
+                this.tbDescription.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                this.tbEditDescription.Visibility = Windows.UI.Xaml.Visibility.Visible;
+                this.CurrentEditBtnContent = this.editBtn.Content;
+                this.editBtn.Content = ButtonSaveContent;
+            }
+            
+        }
+
+        public object CurrentEditBtnContent { get; set; }
     }
 }

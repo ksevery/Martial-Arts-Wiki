@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:MartialArtsWiki.Views"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Teal"
+    NavigationCacheMode="Disabled">
 
     <Grid x:Name="LayoutRoot">
 
@@ -42,16 +43,30 @@
                        Grid.Row="0"
                        HorizontalAlignment="Center"/>
                 <ScrollViewer VerticalScrollMode="Enabled"
-                              Grid.Row="1">
+                              Grid.Row="1"
+                              Name="tbDescription">
                     <TextBlock Text="{Binding MartialArt.Description, Mode=TwoWay}"
                                Style="{StaticResource LabelStyle}"
                                TextWrapping="Wrap"
                                VerticalAlignment="Stretch"
                                HorizontalAlignment="Stretch"/>
                 </ScrollViewer>
+                <TextBox Text="{Binding MartialArt.Description, Mode=TwoWay}"
+                         Name="tbEditDescription"
+                         TextWrapping="Wrap"
+                         Grid.Row="1"
+                         Visibility="Collapsed"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch" />
                 <Button x:ConnectionId='2' Grid.Row="2"
                         Content="Add to favorites"
                                                      />
+                <Button x:ConnectionId='3' Name="editBtn" 
+                        Grid.Row="2"
+                        HorizontalAlignment="Right"
+                        Content="Edit description"
+                        Visibility="Collapsed"
+                                                  />
             </Grid>
         </Grid>
     </Grid>

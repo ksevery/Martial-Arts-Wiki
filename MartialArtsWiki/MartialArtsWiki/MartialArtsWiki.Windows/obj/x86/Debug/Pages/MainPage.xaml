@@ -33,17 +33,26 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
             
             <Button x:ConnectionId='2' Content="Martial Arts" 
                     Grid.Column="0"
+                    Grid.Row="0"
                                                  
                     Width="170"
                     Height="100"/>
             <Button x:ConnectionId='3' Content="Fighting Sports"
                     Grid.Column="1"
+                    Grid.Row="0"
                                                     
                     Width="170"
                     Height="100"/>
+            <Button x:ConnectionId='4' Content="Go to favorites"
+                    Grid.Row="1"
+                                               />
             
         </Grid>
     </Grid>
